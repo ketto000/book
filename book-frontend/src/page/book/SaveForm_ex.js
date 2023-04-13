@@ -17,7 +17,7 @@ const SaveForm_ex = () => {
                 };
             });
 
-        console.log(imageSrc);
+
         };
 
     return (
