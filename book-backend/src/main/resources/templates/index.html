@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="kr" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hello Hello</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+<p th:text="${data}"></p>
+
+<form action="/api/writepro" method="post" enctype="multipart/form-data">
+    <div class="layout">
+        <input name="title" type="text"><br>
+        <input name="title" type="text"><br>
+        <input  type="file" name="imgfile"><br>
+        <button type="submit">작성</button>
+    </div>
+</form>
+</body>
+</html>

@@ -4,7 +4,11 @@ server:
     encoding:
       charset: utf-8
       enabled: true
-
+    multipart:
+      enabled: 'true'
+      location: volumes/ming/git/learnfromcode:\upload
+      max-request-size: 30MB
+      max-file-size: 10MB
 
 spring:
   datasource:
@@ -15,6 +19,10 @@ spring:
 
 jpa:
   hibernate:
-  ddl-auto: update #create,update.none
+  ddl-auto: create #create,update.none
   naming:
   physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+com:
+    example:
+      upload: path =/Volumes/ming/git/LearnFromCode\upload

@@ -24,16 +24,8 @@ public class Book {
     @Column(name="author")
     private String author;
 
-    @Column(name="contents")
     private String contents;
 
-    @Column(name="fileName")
-    private String filename;
-
-    @Column(name="filePath")
-    private String filepath;
-
-
-
+    private String filekey;
 
 }
