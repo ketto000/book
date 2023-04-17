@@ -51,9 +51,6 @@ public class BookService {
             File saveFile = new File(projectPath, fileName);
             file.transferTo(saveFile);
             File_prc file_prc = new File_prc(make_key,book.getAuthor(),fileName,projectPath,"게시판",get_time.get_nowData());
-
-
-
 //
 //            file_prc.setFilekey(make_key);
 //            file_prc.setFileuser(book.getAuthor());

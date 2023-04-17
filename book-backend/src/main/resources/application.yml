@@ -19,10 +19,20 @@ spring:
 
 jpa:
   hibernate:
-  ddl-auto: create #create,update.none
+  ddl-auto: update #create,update.none
   naming:
   physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
 
 com:
     example:
       upload: path =/Volumes/ming/git/LearnFromCode\upload
+
+mybatis:
+  configuration:
+    multiple-result-sets-enabled: false
+    map-underscore-to-camel-case: true
+    call-setters-on-nulls: true
+    jdbc-type-for-null: varchar
+    default-fetch-size: 500
+    mapper-locations:
+    - classpath:mybatis/mapper/*.xml
