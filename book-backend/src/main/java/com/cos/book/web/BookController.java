@@ -64,4 +64,18 @@ public class BookController {
         return new ResponseEntity<>(bookService.삭제하기(id),HttpStatus.OK);
     }
 
+
+    //테스트
+
+    @GetMapping("/test2")
+    public ResponseEntity<?> query_test(Model model) {
+        return new ResponseEntity<>(bookService.검색가져오기("드래곤볼"), HttpStatus.OK);
+    }
+
+    @GetMapping("/test3")
+    public ResponseEntity<?> query_test2(Model model) {
+        return new ResponseEntity<>(bookService.검색가져오기2("드래곤볼"), HttpStatus.OK);
+    }
+
+
 }

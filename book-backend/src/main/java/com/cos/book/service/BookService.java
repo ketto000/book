@@ -84,11 +84,6 @@ public class BookService {
     }
 
 
-
-
-
-
-
     @Transactional(readOnly = true)
     public Book 한건가져오기(Long id){
         return bookRepository.findById(id)

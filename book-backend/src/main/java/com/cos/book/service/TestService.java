@@ -1,11 +1,13 @@
 package com.cos.book.service;
 
+
 import com.cos.book.domain.portfolio;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public interface TestService {
-  public  List<portfolio> getAllDataList();
-  //서비스 기능 인터페이스
-
+    List<portfolio> getAllDataList();
 }
+
+

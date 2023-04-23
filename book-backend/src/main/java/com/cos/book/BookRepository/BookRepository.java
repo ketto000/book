@@ -16,6 +16,8 @@ public interface BookRepository extends JpaRepository<Book, Long> {
     List<Book> queryAnnotationTest1(@Param("titles") String searchWord); //전체필드시
 
     @Query("SELECT a.title FROM Book a where a.title like %:titles% order by a.id DESC")
+
+//    @Options(useGeneratedKeys = true, keyProperty = "userIdx")
     List<Object> queryAnnotationTest2(@Param("titles") String searchWord); //일부 필드시
 
 
